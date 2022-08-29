@@ -1,0 +1,141 @@
+:root {
+  /* Fonts */
+  --maine-txt-fonts: 'Poppins', sans-serif;
+
+  /* Text colors */
+
+  --dark-subtitle-txt-cl: #263238;
+  --dark-title-txt-cl: #000000;
+  --grey-logo-accent-txt-cl: #939393;
+  --ligt-txt-cl: #ffffff;
+  --grey-desc-txt-cl: #8f95a5;
+  --dark-grey-txt-cl: #546269;
+  --accent-cl: #e19a00;
+
+  /* Background colors */
+
+  --gray-maine-bgd-cl: #e5e5e5;
+  --dark-bgd-btn-cl: #263238;
+  --grey-bgd-cards-cl: #f5f5f5;
+  --grey-bgd-: #eeeeee;
+}
+
+/* Reset */
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+/* Свойства для корректного отображения картинок */
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Свойства для обнуления курсива у address */
+
+address {
+  font-style: normal;
+}
+
+/* Base styles */
+
+.page {
+  font-family: var(--maine-txt-fonts);
+  background-color: var(--gray-maine-bgd-cl);
+}
+
+.container {
+  width: 1378px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/* Header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(54 / 36);
+  color: var(--dark-title-txt-cl);
+
+  margin-right: 236px;
+}
+
+.logo-accent {
+  color: var(--grey-logo-accent-txt-cl);
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  gap: 50px;
+}
+
+.header-nav-link {
+  display: block;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-subtitle-txt-cl);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-cl);
+}
+
+.header-btn {
+  margin-left: auto;
+  padding: 20px 0;
+  width: 312px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--dark-title-txt-cl);
+
+  border: 2px solid var(--dark-bgd-btn-cl);
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+    color: var(--accent-cl);
+    border-color: var(--accent-cl) ;
+}

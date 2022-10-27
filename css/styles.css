@@ -71,9 +71,13 @@ address {
 
   outline: 2px solid red;
   outline-offset: -2px;
+
+  
 }
 
 /* Header */
+
+
 
 .header-container {
   display: flex;
